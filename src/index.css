@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+}
+
+}
+/*Setting the main container to hold all different components and divisions*/ 
+.main-container {
+    display:flex;
+    background-color:#dfe3ee;
+    flex-direction: column;
+}
+
+/*This is the top bar to display the logo, time and date, application page position and rounded picture with user options/settings and logout.*/
+.top-bar {
+    background-color:#3b5998;
+    order:1;
+    height: 5vh;
+    align-items: center;
+}
+
+/*This is the three line element to activate the menu*/
+.display_menu {
+  width: 35px;
+  display:block;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+/*This provides style to the 3 short lines. Height, background color, margin and border radius*/
+.display_menu div {
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 25px;
+}
+
+/*Hover effect on the second line*/
+.two:hover {
+  width: 25px;
+}
+
+/*This is the menu navigation bar for the project*/
+.nav-bar {
+    background-color: rgb(44, 42, 42); /* #8b9dc3*/;
+    height: 90vh;
+    width: 200px; 
+    align-content: flex-start;
+    order:1;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/*Main logo located in the circle area above menu*/
+.main-logo {
+    width: 120px;
+    height: 120px;
+    border: solid 2px white;
+    border-radius: 50%;
+    margin: auto; 
+}
+
+/*This will be used as status bar for diferent purposes*/
+.footer-bar {
+    height: 5vh;
+    background-color: #3b5998;
+    order:2;
+}
+
+.logo {
+    background-image: url('/images/mylogo.png');
+    width: 60px;
+    height: 25px;
+    margin-top: 13px;
+ }
+
+ .menu {
+     text-decoration: none;
+     display: block;
+     list-style-type:none;
+     margin-top:20px;
+     text-align: center;
+ }
+
+ li {
+     text-decoration: none;
+     display: inline-block;
+     margin: 10px 0;
+    }
+
+ li a {
+     color: white;
+     display: block;
+     text-align: center;
+     width: 150px;
+     padding: 5px 0;
+     height: auto;
+ }
+
+ li a:hover {
+   display: block;
+   background-color: rgb(8, 202, 228);
+   color:rgb(243, 237, 237);
+   border: solid 1px rgb(35, 207, 199);
+   text-decoration: none;
+   border-radius: 5px;
+ }
